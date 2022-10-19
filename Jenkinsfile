@@ -11,7 +11,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-
                     mkdir /tmp/test_pipeline
                     echo "This is the content" >> /tmp/test_pipeline/test.txt
                     chmod 460 /tmp/test_pipeline/test.txt
